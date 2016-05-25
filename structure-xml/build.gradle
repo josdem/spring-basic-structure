@@ -1,9 +1,18 @@
+ext.springVersion = "4.0.0.RELEASE"
+
 apply plugin: "java"
 apply plugin: "application"
+apply plugin: "jetty"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
+  compile "org.springframework:spring-webmvc:$springVersion"
+}
+
+jettyRun {
+  reload = 'automatic'
+  scanIntervalSeconds = 10
 }
