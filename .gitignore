@@ -1,2 +1,4 @@
 structure-xml/build/
 structure-boot/build/
+structure-boot/.gradle/
+
